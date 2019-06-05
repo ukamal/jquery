@@ -6,10 +6,10 @@ $(document).ready(function () {
     $(".sidebar-social").click(function(){
         if($(this).hasClass('open')){
                     $(this).removeClass('open');
-                    $('#switch-style').animate({'left':'-307px'});
+                    $('.sidebar-social').animate({'left':'-307px'});
                 }else{
                     $(this).addClass('open');
-                    $('#switch-style').animate({'left':'0'});
+                    $('.sidebar-social').animate({'left':'0'});
                 }
     });
 
