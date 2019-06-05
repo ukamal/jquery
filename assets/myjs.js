@@ -6,7 +6,7 @@ $(document).ready(function () {
     $(".sidebar-social").click(function(){
         if($(this).hasClass('open')){
                     $(this).removeClass('open');
-                    $('.sidebar-social').animate({'left':'-307px'});
+                    $('.sidebar-social').animate({'left':'-60px'});
                 }else{
                     $(this).addClass('open');
                     $('.sidebar-social').animate({'left':'0'});
