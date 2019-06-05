@@ -4,7 +4,13 @@ $(document).ready(function () {
    });
 
     $(".sidebar-social").click(function(){
-        $(this).animate({left: '-60px'});
+        if($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $('#switch-style').animate({'left':'-307px'});
+                }else{
+                    $(this).addClass('open');
+                    $('#switch-style').animate({'left':'0'});
+                }
     });
 
     $('#play').click(function () {
